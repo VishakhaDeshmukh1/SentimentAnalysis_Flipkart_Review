@@ -1,0 +1,7 @@
+artifact_location: mlflow-artifacts:/807613605064252511
+creation_time: 1711611571456
+experiment_id: '807613605064252511'
+last_update_time: 1711611632184
+lifecycle_stage: deleted
+name: sentimental_analysis_prediction
+tags: {}

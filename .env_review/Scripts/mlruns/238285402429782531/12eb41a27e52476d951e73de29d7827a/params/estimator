@@ -1,0 +1,3 @@
+Pipeline(memory=Memory(location=.cache\joblib),
+         steps=[('vectorization', CountVectorizer()),
+                ('classifier', RandomForestClassifier())])

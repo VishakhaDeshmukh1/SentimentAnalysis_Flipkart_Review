@@ -1,0 +1,1 @@
+[{'vectorization': [CountVectorizer(), TfidfVectorizer()], 'classifier__n_estimators': [50, 100, 200]}]

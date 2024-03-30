@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innomatics Research Labs - Sentiment Analysis</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(90deg, #ff5733, #c70039); /* Gradient background */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 80%;
+            max-width: 600px;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            border-radius: 20px; /* Rounded corners */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Box shadow */
+            text-align: center;
+            padding: 40px;
+            border: 5px solid #fff; /* White border */
+        }
+        h1, h2 {
+            margin-bottom: 20px;
+            color: #c70039; /* Innomatics red color */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Text shadow */
+        }
+        h1 span {
+            text-decoration: underline;
+        }
+        form {
+            text-align: center;
+        }
+        label {
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+            color: #333; /* Dark text color */
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            resize: none;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #ff5733; /* Innomatics orange color */
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #c70039; /* Darker shade of Innomatics orange */
+        }
+        img {
+            width: 100px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><span style="text-decoration: underline;">Innomatics Research Labs</span></h1>
+        <h2>Sentiment Analysis</h2>
+        <form action="/predict" method="post">
+            <label for="review">Enter your review:</label><br>
+            <textarea id="review" name="review" placeholder="Write your review here..." required></textarea><br>
+            <input type="submit" value="Predict">
+        </form>
+        <!-- You can add more elements here for further enhancements -->
+    </div>
+</body>
+</html>
